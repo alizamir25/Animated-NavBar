@@ -3,17 +3,14 @@ nav {
     width: 100%;
     max-width: 14rem;
   }
-  
   @keyframes firstShow {
     0%, 100% { transform: perspective(1000px) translate3d(0, 0, 0em); }
     50% { transform: perspective(1000px) translate3d(0, 0, 3em); }
   }
-  
   @keyframes show {
     0% { opacity: 0; }
     100% { opacity: 1; }
   }
-  
   ul {
     position: relative;
     aperspective: 1000px;
@@ -27,7 +24,6 @@ nav {
       lighter 1rem Helvetica,
       sans-serif
       ;
-    
     li {
       height: 3rem;
       display: flex;
@@ -41,26 +37,21 @@ nav {
       animation: 
         firstShow 0.5s ease-in-out,
         show 0.15s linear forwards;
-      
       &:nth-child(1) { animation-delay: 0.50s; }
       &:nth-child(2) { animation-delay: 0.60s; }
       &:nth-child(3) { animation-delay: 0.70s; }
       &:nth-child(4) { animation-delay: 0.80s; }
       &:nth-child(5) { animation-delay: 0.90s; }
       &:nth-child(6) { animation-delay: 1.00s; }
-      
       &:first-child {
         border-radius: 1rem 1rem 0 0;
       }
-      
       &:last-child {
         border-radius: 0 0 1rem 1rem;
       }
-      
       &:hover, &:focus-within {
         transform:  translate3d(0,0,3rem);
       }
-      
       &:hover + &,
       &:has(+ &:focus-within),
       &:focus + &,
@@ -81,7 +72,6 @@ nav {
         box-shadow: inset 0 -1rem 0.5rem -0.75rem #0002;
       }
     }
-    
     h2, a {
       font-size: 0.9rem;
       display: flex;
@@ -91,25 +81,21 @@ nav {
       text-decoration: none;
       color: #000;
     }
-    
     h2 {
       font-size: 1rem;
       font-weight: 400;
     }
-    
     i {
       margin-right: 0.25em;
       width: 1rem;
     }
   }
-  
   @media (prefers-reduced-motion) {
     nav * {
       transition-duration: 0s !important;
       animation-duration: 0s !important;
     }
   }
-  
   /* demo */
   body {
     aperspective: 1000px;
