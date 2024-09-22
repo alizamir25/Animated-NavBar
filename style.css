@@ -4,8 +4,8 @@ nav{
     max-width: 14rem;
   }
   @keyframes firstShow{
-    0%, 100% { transform: perspective(1000px) translate3d(0, 0, 0em); }
-    50% { transform: perspective(1000px) translate3d(0, 0, 3em); }
+    0%, 100% { transform: perspective(1000px) translate3d(0, 0, 0em);}
+    50% { transform: perspective(1000px) translate3d(0, 0, 3em);}
   }
   @keyframes show{
     0% { opacity: 0; }
@@ -90,7 +90,7 @@ nav{
       width: 1rem;
     }
   }
-  @media (prefers-reduced-motion) {
+  @media (prefers-reduced-motion){
     nav *{
       transition-duration: 0s !important;
       animation-duration: 0s !important;
