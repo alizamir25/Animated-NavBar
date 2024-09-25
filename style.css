@@ -4,8 +4,8 @@ nav{
     max-width: 14rem;
   }
   @keyframes firstShow{
-    0%, 100% { transform: perspective(1000px) translate3d(0, 0, 0em);}
-    50% { transform: perspective(1000px) translate3d(0, 0, 3em);}
+    0%, 100% {transform: perspective(1000px) translate3d(0, 0, 0em);}
+    50% {transform: perspective(1000px) translate3d(0, 0, 3em);}
   }
   @keyframes show{
     0% { opacity: 0; }
